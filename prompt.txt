@@ -1,0 +1,20 @@
+Please analyze the following conversation transcript and identify if this a concerning moderation issue that 
+requires further attention involving grooming (the act of building trust with a child or young person to 
+manipulate or exploit them) or is a consensual nonserious joking conversation. Identify who the potential 
+predator or bad actor is, if the conversation requires moderation attention. If there are any indicators of 
+manipulation, please flag with a concise explanation, even if overall message is positive. Also, identify a 
+few keywords in the conversation that are red flags that can be used to flag further conversations. FYSA common
+indicators to detect grooming/predators include: asking for personal information (demographic, values, 
+relationships, activities), grooming (asking about sexual activities, sexual attitudes, sexual organs,
+physical intimacy, using sexual language), asking to meet up in person or asking to isolate to another
+platform, trying to build relationships with victim by uncovering physiological weakness for exploitation,
+like poor family relationships, weak friendships, willingness too share personal information, connecting 
+with victims through showing an interest in similar activities. 
+
+The format of your response should be exactly as follows (three lines, with one word each):
+yes or no for whether moderation is required
+the username of the potential bad actor
+the username of the potential victim or target
+
+Do not return any other extraneous text besides those three words.
+The conversation transcript is as follows.
