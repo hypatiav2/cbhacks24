@@ -39,7 +39,7 @@ async def scan_messages(channel):
     try:
         messages = []
         message_objects = []
-        async for message in channel.history(limit=30):
+        async for message in channel.history(limit=10):
             messages.append(f"{message.author.name}: {message.content}")
             message_objects.append(message)
         messages.reverse()
@@ -92,6 +92,7 @@ def read_prompt_file(filename):
 def parse_response(response):
     try:
         lines = response.split('\n')
+        print("Explanation of below: " + lines[3])
         return lines[0].strip().lower(), lines[1].strip(), lines[2].strip()  # Yes/No, predator, victim
     except IndexError:
         return "no", "", ""  # Default response in case of parsing error
@@ -226,7 +227,7 @@ async def on_ready():
     print(f'Logged in as {client.user}')
     # Continuously scan each text channel in every server the bot is in
     for guild in client.guilds:
-            channel = get(guild.text_channels, name="test1")
+            channel = get(guild.text_channels, name="test4")
             await scan_messages(channel)
 
 # Event handler when a message is sent in the server
@@ -239,7 +240,7 @@ async def on_message(message):
         return
 
     # If the message contains "bot", scan the last 10 messages for moderation
-    if 'bot' in message.content.lower() or msg_count == 10:
+    if 'bot' in message.content.lower() or msg_count == 25:
         print("Scanning now..")
         msg_count = 0
         await scan_messages(message.channel)
