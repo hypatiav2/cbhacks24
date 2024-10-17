@@ -1,2 +1,2 @@
-# cbhacks24
-Cerebral Hacks 2024 Project - Baymod: your online safety guardian
+# Baymod: Your Online Safety Guardian
+🏆 Best Cybersecurity Hack at Cerebral Beach Hacks 2024
